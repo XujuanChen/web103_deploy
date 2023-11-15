@@ -15,7 +15,6 @@ import Avatar from './components/Avatar'
 import AddUserToTrip from './pages/AddUserToTrip'
 
 const App = () => {
-  // const API_URL = 'http://localhost:3001'
   const API_URL = process.env.NODE_ENV === 'production' ? 'https://ontheflyserver.up.railway.app' : 'http://localhost:3001'
 
   const [trips, setTrips] = useState([]);
@@ -36,7 +35,7 @@ const App = () => {
   
     getUser()
     fetchTrips()
-  }, []);
+  }, [API_URL]);
 
   const logout = async () => {
     const url = `${API_URL}/auth/logout`
