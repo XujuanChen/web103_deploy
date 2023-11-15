@@ -15,7 +15,7 @@ import authRoutes from './routes/auth.js'
 const app = express()
 
 app.use(session({
-  secret: 'codepath',
+  secret: 'd5381990451ef27fa941',
   resave: false,
   saveUninitialized: true
 }))
