@@ -16,7 +16,7 @@ import AddUserToTrip from './pages/AddUserToTrip'
 
 const App = () => {
   // const API_URL = 'http://localhost:3001'
-  const API_URL = process.env.NODE_ENV === 'production' ? 'web103deploy-server.up.railway.app' : 'http://localhost:3001'
+  const API_URL = process.env.NODE_ENV === 'production' ? 'https://web103deploy-server.up.railway.app' : 'http://localhost:3001'
 
   const [trips, setTrips] = useState([]);
   const [user, setUser] = useState([])
