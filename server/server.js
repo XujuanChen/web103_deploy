@@ -12,7 +12,7 @@ import session from 'express-session'
 import { GitHub } from './config/auth.js'
 import authRoutes from './routes/auth.js'
 
-const CLIENT_URL = process.env.NODE_ENV === 'production' ? 'https://web103-client.up.railway.app' : 'http://localhost:3000'
+const CLIENT_URL = process.env.NODE_ENV === 'production' ? 'https://ontheflyclient.up.railway.app' : 'http://localhost:3000'
 
 const app = express()
 
